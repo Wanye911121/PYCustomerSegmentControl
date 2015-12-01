@@ -35,6 +35,44 @@ static float const SelectedTextFont = 20;
     return self;
 }
 
+-(void)drawRect:(CGRect)rect
+{
+    [super drawRect:rect];
+    
+    //获取上下文
+    
+    CGContextRef ref = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(ref, [UIColor whiteColor].CGColor);
+    CGContextFillRect(ref, rect);
+    
+    //创建路径
+    
+    CGMutablePathRef path =CGPathCreateMutable();
+    
+    //竖线高度
+    CGFloat verticalLineHeight = (_viewHeight - LineHeight)/2;
+    
+    for (int i = 1; i<_textArray.count; i++) {
+        //设置路径起点
+        CGPathMoveToPoint(path,nil,i*_textLabelWidth,verticalLineHeight/2);
+        
+        //添加路径内容
+        
+        CGPathAddLineToPoint(path, nil,i*_textLabelWidth,verticalLineHeight*3/2);
+    }
+    
+    [[UIColor grayColor] setStroke];
+    
+    CGContextSetLineWidth(ref, 1);
+    
+    CGContextAddPath(ref, path);
+    
+    CGContextDrawPath(ref, kCGPathFillStroke);
+    
+    CGContextRelease(ref);
+}
+
 -(void)layoutSubviews
 {
     [super layoutSubviews];
@@ -49,16 +87,16 @@ static float const SelectedTextFont = 20;
 -(void)initDefaultStyle
 {
     if (_textColor == nil) {
-        _textColor = [UIColor grayColor];
+        _textColor          = [UIColor grayColor];
     }
     if (_highlightTextColor == nil) {
         _highlightTextColor = [UIColor blackColor];
     }
     if (_lineColor == nil) {
-        _lineColor = [UIColor redColor];
+        _lineColor          = [UIColor redColor];
     }
     if (_textArray == nil) {
-        _textArray = @[@"test1",@"test2",@"test3"];
+        _textArray          = @[@"test1",@"test2",@"test3"];
     }
     _textLabelWidth = _viewWidth / _textArray.count;
 }
