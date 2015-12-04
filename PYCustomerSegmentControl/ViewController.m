@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     PYSegmentControl *segmentControl = [[PYSegmentControl alloc] initWithFrame:CGRectMake(10, 50, self.view.bounds.size.width-20, 50)];
-    segmentControl.textArray = @[@"Contacts",@"Invite",@"Search"];
+    segmentControl.textArray = @[@"Contacts",@"Invite",@"Search",@"我擦"];
     [self.view addSubview:segmentControl];
     [segmentControl setBlockCallBack:^(NSInteger index, NSString *title) {
         NSLog(@"%d-%@",index,title);

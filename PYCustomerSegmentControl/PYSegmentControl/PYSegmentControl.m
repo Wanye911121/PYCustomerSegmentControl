@@ -9,7 +9,7 @@
 static float const DURATION = 0.2;
 static float const LineHeight = 5;
 static float const TextFont = 16;
-static float const SelectedTextFont = 20;
+static float const SelectedTextFont = 18;
 
 #import "PYSegmentControl.h"
 
@@ -68,7 +68,7 @@ static float const SelectedTextFont = 20;
     
     CGContextAddPath(ref, path);
     
-    CGContextDrawPath(ref, kCGPathFillStroke);
+    CGContextDrawPath(ref, kCGPathStroke);
     
     CGContextRelease(ref);
 }
@@ -172,7 +172,7 @@ static float const SelectedTextFont = 20;
     [animation setFromValue:[NSValue valueWithCGPoint:x]];
     [animation setToValue:[NSValue valueWithCGPoint:y]];
     [animation setAutoreverses:YES];
-    [animation setDuration:.06];
+    [animation setDuration:.02];
     [animation setRepeatCount:3];
     [viewLayer addAnimation:animation forKey:nil];
 }
