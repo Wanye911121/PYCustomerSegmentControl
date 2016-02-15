@@ -14,6 +14,7 @@ typedef void(^ButtonOnClickBlock)(NSInteger index, NSString * title);
 
 //文本颜色
 @property (nonatomic,strong) UIColor *textColor;
+
 @property (nonatomic,strong) UIColor *highlightTextColor;
 //细线颜色
 @property (nonatomic,strong) UIColor *lineColor;
