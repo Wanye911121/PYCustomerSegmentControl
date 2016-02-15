@@ -18,12 +18,13 @@ Pod::Spec.new do |s|
 	"MikeZhangpy" => "zhangpy1991@126.com" 
   }
 
+
   s.source       = {
         :git => 'https://github.com/MikeZhangpy/PYCustomerSegmentControl.git',
         :tag => s.version.to_s
     }
 
-  s.requires_arc      = true
-
-  s.source_files      = 'PYCustomerSegmentControl/PYSegmentControl/*.{m,h}'
+  s.source_files = 'PYCustomerSegmentControl/PYSegmentControl/*.{h,m}'
+  s.framework = 'UIKit'
+  s.platform  = :ios, '7.0'
 end
