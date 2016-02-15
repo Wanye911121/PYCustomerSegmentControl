@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071CD86F1C71A2B0002AE1F6 /* PYSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CD86E1C71A2B0002AE1F6 /* PYSegmentControl.m */; };
 		077AB0231C0D8A8E0033A93C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 077AB0221C0D8A8E0033A93C /* main.m */; };
 		077AB0261C0D8A8E0033A93C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 077AB0251C0D8A8E0033A93C /* AppDelegate.m */; };
 		077AB0291C0D8A8E0033A93C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 077AB0281C0D8A8E0033A93C /* ViewController.m */; };
 		077AB02C1C0D8A8E0033A93C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077AB02A1C0D8A8E0033A93C /* Main.storyboard */; };
 		077AB02E1C0D8A8E0033A93C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077AB02D1C0D8A8E0033A93C /* Assets.xcassets */; };
 		077AB0311C0D8A8E0033A93C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077AB02F1C0D8A8E0033A93C /* LaunchScreen.storyboard */; };
-		077AB03E1C0D9E520033A93C /* PYSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 077AB03D1C0D9E520033A93C /* PYSegmentControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		071CD86D1C71A2B0002AE1F6 /* PYSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSegmentControl.h; sourceTree = "<group>"; };
+		071CD86E1C71A2B0002AE1F6 /* PYSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSegmentControl.m; sourceTree = "<group>"; };
 		077AB01E1C0D8A8E0033A93C /* PYCustomerSegmentControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PYCustomerSegmentControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		077AB0221C0D8A8E0033A93C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		077AB0241C0D8A8E0033A93C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		077AB02D1C0D8A8E0033A93C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		077AB0301C0D8A8E0033A93C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		077AB0321C0D8A8E0033A93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		077AB03C1C0D9E520033A93C /* PYSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSegmentControl.h; sourceTree = "<group>"; };
-		077AB03D1C0D9E520033A93C /* PYSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSegmentControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,9 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071CD86C1C71A2B0002AE1F6 /* PYSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				071CD86D1C71A2B0002AE1F6 /* PYSegmentControl.h */,
+				071CD86E1C71A2B0002AE1F6 /* PYSegmentControl.m */,
+			);
+			path = PYSegmentControl;
+			sourceTree = "<group>";
+		};
 		077AB0151C0D8A8E0033A93C = {
 			isa = PBXGroup;
 			children = (
+				071CD86C1C71A2B0002AE1F6 /* PYSegmentControl */,
 				077AB0201C0D8A8E0033A93C /* PYCustomerSegmentControl */,
 				077AB01F1C0D8A8E0033A93C /* Products */,
 			);
@@ -61,7 +71,6 @@
 		077AB0201C0D8A8E0033A93C /* PYCustomerSegmentControl */ = {
 			isa = PBXGroup;
 			children = (
-				077AB03B1C0D9E520033A93C /* PYSegmentControl */,
 				077AB0241C0D8A8E0033A93C /* AppDelegate.h */,
 				077AB0251C0D8A8E0033A93C /* AppDelegate.m */,
 				077AB0271C0D8A8E0033A93C /* ViewController.h */,
@@ -81,15 +90,6 @@
 				077AB0221C0D8A8E0033A93C /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		077AB03B1C0D9E520033A93C /* PYSegmentControl */ = {
-			isa = PBXGroup;
-			children = (
-				077AB03C1C0D9E520033A93C /* PYSegmentControl.h */,
-				077AB03D1C0D9E520033A93C /* PYSegmentControl.m */,
-			);
-			path = PYSegmentControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +164,7 @@
 			files = (
 				077AB0291C0D8A8E0033A93C /* ViewController.m in Sources */,
 				077AB0261C0D8A8E0033A93C /* AppDelegate.m in Sources */,
-				077AB03E1C0D9E520033A93C /* PYSegmentControl.m in Sources */,
+				071CD86F1C71A2B0002AE1F6 /* PYSegmentControl.m in Sources */,
 				077AB0231C0D8A8E0033A93C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +312,7 @@
 				077AB0371C0D8A8E0033A93C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
