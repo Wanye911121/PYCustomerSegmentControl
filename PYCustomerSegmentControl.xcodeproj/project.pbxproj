@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		071CD86F1C71A2B0002AE1F6 /* PYSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CD86E1C71A2B0002AE1F6 /* PYSegmentControl.m */; };
+		071CD8731C71B07D002AE1F6 /* PYSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CD8721C71B07D002AE1F6 /* PYSegmentControl.m */; };
 		077AB0231C0D8A8E0033A93C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 077AB0221C0D8A8E0033A93C /* main.m */; };
 		077AB0261C0D8A8E0033A93C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 077AB0251C0D8A8E0033A93C /* AppDelegate.m */; };
 		077AB0291C0D8A8E0033A93C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 077AB0281C0D8A8E0033A93C /* ViewController.m */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		071CD86D1C71A2B0002AE1F6 /* PYSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSegmentControl.h; sourceTree = "<group>"; };
-		071CD86E1C71A2B0002AE1F6 /* PYSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSegmentControl.m; sourceTree = "<group>"; };
+		071CD8711C71B07D002AE1F6 /* PYSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSegmentControl.h; sourceTree = "<group>"; };
+		071CD8721C71B07D002AE1F6 /* PYSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSegmentControl.m; sourceTree = "<group>"; };
 		077AB01E1C0D8A8E0033A93C /* PYCustomerSegmentControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PYCustomerSegmentControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		077AB0221C0D8A8E0033A93C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		077AB0241C0D8A8E0033A93C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,11 +42,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		071CD86C1C71A2B0002AE1F6 /* PYSegmentControl */ = {
+		071CD8701C71B07D002AE1F6 /* PYSegmentControl */ = {
 			isa = PBXGroup;
 			children = (
-				071CD86D1C71A2B0002AE1F6 /* PYSegmentControl.h */,
-				071CD86E1C71A2B0002AE1F6 /* PYSegmentControl.m */,
+				071CD8711C71B07D002AE1F6 /* PYSegmentControl.h */,
+				071CD8721C71B07D002AE1F6 /* PYSegmentControl.m */,
 			);
 			path = PYSegmentControl;
 			sourceTree = "<group>";
@@ -54,7 +54,6 @@
 		077AB0151C0D8A8E0033A93C = {
 			isa = PBXGroup;
 			children = (
-				071CD86C1C71A2B0002AE1F6 /* PYSegmentControl */,
 				077AB0201C0D8A8E0033A93C /* PYCustomerSegmentControl */,
 				077AB01F1C0D8A8E0033A93C /* Products */,
 			);
@@ -71,6 +70,7 @@
 		077AB0201C0D8A8E0033A93C /* PYCustomerSegmentControl */ = {
 			isa = PBXGroup;
 			children = (
+				071CD8701C71B07D002AE1F6 /* PYSegmentControl */,
 				077AB0241C0D8A8E0033A93C /* AppDelegate.h */,
 				077AB0251C0D8A8E0033A93C /* AppDelegate.m */,
 				077AB0271C0D8A8E0033A93C /* ViewController.h */,
@@ -164,7 +164,7 @@
 			files = (
 				077AB0291C0D8A8E0033A93C /* ViewController.m in Sources */,
 				077AB0261C0D8A8E0033A93C /* AppDelegate.m in Sources */,
-				071CD86F1C71A2B0002AE1F6 /* PYSegmentControl.m in Sources */,
+				071CD8731C71B07D002AE1F6 /* PYSegmentControl.m in Sources */,
 				077AB0231C0D8A8E0033A93C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

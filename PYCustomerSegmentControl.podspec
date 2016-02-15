@@ -25,5 +25,5 @@ Pod::Spec.new do |s|
 
   s.requires_arc      = true
 
-  s.source_files      = 'PYSegmentControl/*.{m,h}'
+  s.source_files      = 'PYCustomerSegmentControl/PYSegmentControl/*.{m,h}'
 end
